@@ -16,9 +16,8 @@ fetch('https://www.coursehubiitg.in/api/codingweek/contributions')
             });
         });
 
-        console.log(mydata.length);
-        mydata.sort((a,b)=>b.points - a.points );
-        console.log(mydata[1].name);
+        
+        mydata.sort((a,b)=>b.points - a.points );//from google search
 
         for(let i=0;i<3;i++){
             const row = mydata[i];
